@@ -58,7 +58,7 @@ header {
     color: rgba(240, 248, 255, 0.651);
 }
 
-.btn-adv {
+.btnadv {
     padding-top: 15px;
     width: 110px;
     min-width: 100px;
@@ -74,7 +74,7 @@ header {
     text-wrap: nowrap;
 }
 
-.btn-adv:hover {
+.btnadv:hover {
     background-color: rgba(255, 0, 0, 0.63);
 }
 
@@ -90,7 +90,7 @@ header {
     transition: 0.3s ease-out;
 }
 
-.side-buttons {
+.sidebuttons {
     padding-top: 50px;
     position: fixed;
     top: 0;
@@ -120,7 +120,7 @@ header {
     background-color: azure;
 }
 
-.sbtn-adv {
+.sbtnadv {
     margin-top: 40px;
     padding-top: 15px;
     width: 150px;
@@ -136,7 +136,7 @@ header {
     text-wrap: nowrap;
 }
 
-.sbtn-adv:hover {
+.sbtnadv:hover {
     background-color: rgba(255, 0, 0, 0.63);
 }
 
