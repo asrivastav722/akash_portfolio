@@ -1,4 +1,4 @@
-import react from "React";
+
 export default function Contact(){
     return (
         <section class="contactme" id="five">
@@ -30,15 +30,13 @@ export default function Contact(){
         </div>
         <div class="col2">
             <p class="cus">Drop a line</p>                             
-                
-               
-                
+            
            <form class="feed" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="9b882dfd-33c2-4bf8-8051-35846a199346" />
                 <input type="text" placeholder="Name" name="name" required />
                 <input type="email" placeholder="Email" name="email" required />
                 <input type="text" placeholder="Phone" name="phone" id="phone" />
-                <textarea name="message" placeholder="Message" required></textarea />
+                <textarea name="message" placeholder="Message" required />
                 <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
                 <button class="sub" type="submit">Submit</button>
         </form>

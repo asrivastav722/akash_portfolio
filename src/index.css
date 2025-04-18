@@ -1,0 +1,378 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Global Classes */
+html {    scroll-behavior: smooth;  }
+
+.darkbg     {   background-color:rgb(0, 0, 0)               !important    }
+.darkfg     {   background-color:rgba(255, 8, 8, 0.738)     !important    }
+.darktext   {   color:rgba(255, 8, 8, 0.738)                !important    }
+.lightbg    {   background-color:rgb(255, 255, 255)         !important    }
+.lightfg    {   background-color:rgb(243, 237, 237)         !important    }
+.mont       {   font-family: montserrat                       !important    }
+.poppins    {   font-family: poppins                          !important    }
+.textgrey   {   color:#ccd2d9c9                             !important    }
+.roboto     {   font-family: "Roboto Condensed", sans-serif   !important    }
+
+.ant-tooltip-inner{
+    font-family: "Roboto Condensed", sans-serif ;
+}
+
+
+.hovershadow {
+    font-weight: 200;
+    border: 1px solid rgba(255, 8, 8, 0.738);
+    box-shadow:inset 0px 0px 5px rgba(255, 8, 8, 0.738);
+    transition: box-shadow 1s ease;
+    /* transition: background-color 0.3s ease; */
+}
+
+.hovershadow:hover {
+    border: 1px solid rgb(255, 8, 8);
+    cursor: pointer;
+    box-shadow:inset 0px 0px 50px rgba(255, 8, 8, 0.738);
+}
+.hovershadowtwo {
+    font-weight: 200;
+    border: 1px solid rgba(255, 8, 8, 0.738);
+    border-style: dashed;
+    border-width: 1.5px;
+    border-radius: 0px 30px 0px 0px;
+    box-shadow: 0px 0px 1px rgba(255, 8, 8, 0.738);
+}
+
+.hovershadowtwo:hover {
+    border-style: groove;
+    border: 1px solid rgb(255, 8, 8);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 8, 8, 0.738);
+}
+
+/*Contact Me*/
+.contactme {
+    padding-top:15px;
+    display: flex;
+    background-color: var(--bg);
+    gap: 50px;
+}
+
+.col1 {
+    width: 45%;
+    padding: 100px;
+    padding-right: 0px;
+
+}
+
+.cus {
+    font-family: "montserrat";
+    font-size: 20pt;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.ct {
+    font-family: "montserrat";
+    font-size: 10pt;
+    line-height: 30px;
+}
+
+.cont {
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.cimg {
+    padding: 5px;
+}
+
+.ctext {
+    font-size: medium;
+    font-family: "montserrat";
+    font-weight: 200;
+}
+
+.ccont {
+    font-size: large;
+    font-family: "montserrat";
+
+}
+
+.col2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+    padding-left: 0px;
+}
+
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    bottom: 20px;
+
+}
+
+textarea, input {
+    width: 40vw;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    background-color: var(--bg);
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "montserrat";
+
+    
+}
+
+textarea {
+    height: 100px;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 50px;
+    width: 130px;
+    border-radius: 3px;
+    border: none;
+    font-family: "montserrat";
+    transition: all 0.2s;
+
+}
+
+.sub:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.295);
+}
+
+
+
+#dark{
+    height:60px;
+    width:60px;
+    border-radius:100%;
+    border:none;
+    background-color: red;
+    box-shadow: 0px 0px 10px rgb(248, 1, 1);
+    position:fixed;
+    bottom:5vh;
+    right:5vw;
+    transition: all 0.2s;
+    padding:5px;
+}
+#dark:hover{ 
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR MOBILE DEVICES###############################################################################################################*/
+
+
+
+
+
+@media screen and (max-device-width: 846px){
+
+    
+/* Header section ----------------------------------------------------------------------------------------*/
+.menu{
+    display:flex;
+    transition: display 2s;
+    margin-right: 20px;
+} 
+    .close{
+        margin-left: 250px;
+        margin-bottom: 40px; 
+    }
+    .btn{
+        display:none;
+    }
+    .btn-adv{
+        display:none;
+    }
+    .logocontainer{
+        width:60vw;
+    }
+        .logo{
+            padding-left:50px;
+        }
+/* About Card---------------------------------------------------------------------- */
+
+.aboutcard{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:fit-content;
+}
+    .text{
+        height:500px;
+        padding-bottom: 0px;
+    }
+        .textarea{
+            width: 70vw;
+            justify-content: center;
+        }
+.image{
+    height:200px;
+}   
+    .profile{ 
+        height: 200px; 
+    }
+    .social{
+        display:block;
+        text-align: center;  
+    }
+        #follow{ 
+            writing-mode: horizontal-tb;
+            width:100vw;        
+        }
+        .slogo{
+            padding:10px;
+        }
+        
+/*Skills Section----------------------------------------------------------------------*/
+.skills{
+    padding: 10px;
+    gap:5px;
+}
+    .row{
+        gap:5px;
+    }
+        .skill{
+            height:150px;
+            width:120px;
+        }
+/*Portfolio Section----------------------------------------------------------------------*/
+.pro{
+    width:325px;
+    height:175px;
+}
+    .provid{
+        width:325px;
+        height:175px;
+    }
+/*Experience Section----------------------------------------------------------------------*/
+.exp{
+    width:60vw;
+}
+    #breaker{
+        width:60vw;
+    }
+
+.contactme{
+    flex-wrap: wrap;
+}
+    .col1{
+        width: 100%;
+        padding: 20px;
+        padding-right: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+        .cont{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 15px;
+        }
+        .col2{
+            width: 100%;
+            padding:20px;
+            padding-left: 20px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .feed{
+            justify-content: center;
+            align-items: center;
+        }
+            textarea ,input{
+                width:250px;
+                
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR TABLETS###############################################################################################################*/
+
+
+
+
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    /* Header section ----------------------------------------------------------------------------------------*/
+header{              
+    padding-top: 10px;  
+}
+    .logocontainer{  
+        width:40vw; 
+    }
+    .buttons{ 
+        width:60vw;     
+    }        
+/* About Card---------------------------------------------------------------------- */
+.aboutcard{        
+        grid-template-rows:500px;
+    }
+        .text{
+            padding-bottom:100px;
+        }
+        .image{
+            padding-bottom: 100px;
+        }
+
+
+
+
+}

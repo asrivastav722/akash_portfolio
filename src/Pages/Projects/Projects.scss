@@ -1,0 +1,19 @@
+.projectcard{
+    height: 200px;
+    width: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 35px;
+    border: 5px solid rgb(152,5,5);
+    transition: all 0.5s ease;
+
+}
+.hoverbox{
+    border-top-right-radius: 25px;
+    background-color: rgb(152, 5, 5);
+}
+.projectcard:hover{
+    height: 210px;
+    width: 295px;
+} 
