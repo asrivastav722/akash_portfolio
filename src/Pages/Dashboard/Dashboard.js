@@ -10,7 +10,7 @@ export default function About(){
     <div class="d-flex w-25 flex-col">
         <p class="welcome roboto">Welcome! I'M</p>
         <p class="roboto text-4xl">Akash Raj</p>
-        <p class="roboto">Front-End Web Developer</p>
+        <p class="roboto">Front-End Developer</p>
         <p class="intro roboto tracking-wide ">I have 20 Months of experience in front-end development, where I've worked extensively with HTML, CSS, JavaScript, and frameworks like React, Nextjs . I've built responsive, mobile-friendly applications and collaborated closely with designers to deliver user-centric interfaces. </p>
     
     </div>

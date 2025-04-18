@@ -15,7 +15,7 @@ const Layout = () => {
 
             <div className="bodyDesktop ">
 
-              <div className="headerContainerDesktop darkbg"><Header location={location} navData={navData}/></div>
+              <div className="headerContainerDesktop darkbg"><Header location={location} setLocation={setLocation} navData={navData}/></div>
     
               <div className="pageDesktop darkfg">
                 <div className="pages darkbg"><Outlet/></div>

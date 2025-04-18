@@ -18,8 +18,8 @@ export default function NavBar({navData,location,setLocation,...props}){
         
                 <div className="d-flex flex-col roboto align-items-center gap-3">
                     
-                    {navData.map((val)=>{
-                        return <Tooltip placement="right" color="rgba(255, 8, 8, 0.94)" title={val.name}>
+                    {navData.map((val,i)=>{
+                        return navData.length !== i+1 && <Tooltip placement="right" color="rgba(255, 8, 8, 0.94)" title={val.name}>
                                     
                                     <Button style={{height:"fit-content",width:"fit-content"}} onClick={()=>{ontoggleMenu(val)}} type="text" className={`${val.path===location?`darkfg selected`:null} p-2 align-items-center justify-center d-flex flex-col rounded-full navbtn`}>
                                     

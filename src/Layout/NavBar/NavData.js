@@ -13,5 +13,6 @@ const navData=[
     {   id:4,   path:"/projects"    ,   name:"Projects"     ,logo:<Portfolio  />      },
     {   id:5,   path:"/education"   ,   name:"Education"    ,logo:<Education  />      },
     {   id:6,   path:"/cousework"   ,   name:"Courseworks"  ,logo:<Courseworks />     },
+    {   id:7,   path:"/contact"   ,   name:"Contact Me"  ,logo:<Courseworks />     },
 ]
 export default navData

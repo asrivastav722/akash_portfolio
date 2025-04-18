@@ -31,10 +31,10 @@ export default function Experience(){
             startdate:"Aug 2024",
             enddate:"Till Now",
             desc:[
-                <li>Developing a social networking platform primarily used for professional networking and career development named as 'Show Stage' </li>,
+                <li>Developing a social networking platform primarily used for professional networking and career development named as <a href="https://app.showstage.in">Show Stage</a> </li>,
                 <li>Gained hands-on Experience in Frontend Frameworks like React and Next </li>,
                 <li>Also worked with different utilities and technologies like Git/Gihub Version Control, Tailwind CSS, Bootstrap and APIs </li>,
-                <li>Contributed in developement of a Website for a Travel Company Go4explore</li>
+                <li>Contributed in developement of a Website for a Travel Company <a href="https://www.go4explore.com">Go4explore</a></li>
 
             ]},
     ]
