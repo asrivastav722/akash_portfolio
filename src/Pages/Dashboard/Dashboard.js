@@ -1,5 +1,5 @@
 import "./Dashboard.scss"
-import Profile from "../../assets/images/profile.jpg"
+import Profile from "../../assets/images/profile.png"
 import Facebook from "../../assets/images/fb.png"
 import Linkedin from "../../assets/images/ln.png"
 import Github from "../../assets/images/gh.png"
