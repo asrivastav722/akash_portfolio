@@ -1,13 +1,21 @@
+.skillprogress{
+    transition: all 0.5s ease;
 .skillbox{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     width: 130px;
     height: 120px;
+    transition: all 0.5s ease;
+    gap:10px;
     svg{
         height: 40px;
         width: 50px;
     }
+}}
+.skillprogress:hover{
+    cursor: pointer;
+    transform: translate(0px,-20px);
 }

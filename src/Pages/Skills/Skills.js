@@ -35,10 +35,10 @@ export default function Skills(){
             {skills.map((val)=>{
                 return <CircularProgress 
                         percentage={val.level} 
-                        className='h-fit w-fit' 
+                        className='h-fit w-fit skillprogress' 
                         strokeWidth={6}
                         color="red"
-                        content={<div class="skillbox rounded-xl p-4">
+                        content={<div class="skillbox rounded-xl p-3">
                             {val.logo}
                             <p class="roboto text-sm font-light text-wrap m-0 p-0">{val.name}</p>
                         </div>}

@@ -15,7 +15,7 @@ export default function Experience(){
             ]},
         {
             designation:"Android Developer Intern",
-            organization:"Nullclasses",
+            organization:"NullClasses",
             location:"Remote",
             startdate:"Sept 2023",
             enddate:"Oct 2023",
@@ -26,7 +26,7 @@ export default function Experience(){
             ]},
         {
             designation:"Front-End Web Developer",
-            organization:"Cyberoze",
+            organization:"CYberoze",
             location:"Noida ,UP",
             startdate:"Aug 2024",
             enddate:"Till Now",
