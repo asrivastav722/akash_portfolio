@@ -38,7 +38,7 @@ export default function Experience(){
 
             ]},
     ]
-    return <section class="roboto h-100 w-100 d-flex align-items-center justify-center">
+    return <section class="overflow-x-scroll hidescrollbar roboto h-100 w-100 d-flex align-items-center justify-center">
         {experience.map((val,i)=>{
             return <div className="d-flex align-items-center">
                 <div className="h-fit rounded-3xl d-flex flex-col hovershadow align-items-center justify-start excard p-4 gap-4">

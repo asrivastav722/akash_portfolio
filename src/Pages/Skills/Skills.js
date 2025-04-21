@@ -11,31 +11,39 @@ import {ReactComponent as Next} from "../../assets/svg/Skills/Next.svg"
 import {ReactComponent as Python} from "../../assets/svg/Skills/Python.svg"
 import {ReactComponent as React} from "../../assets/svg/Skills/React.svg"
 import {ReactComponent as Tailwind} from "../../assets/svg/Skills/Tailwind.svg"
+import CircularProgress from "../../Components/circular-progress/CircularProgress"
 
 
 export default function Skills(){
     const skills=[
-        { name:"HTML 5",logo:<Html/>},
-        { name:"CSS 3",logo:<Css/>},
-        { name:"Bootstrap",logo:<Bootstrap/>},
-        { name:"Tailwind CSS",logo:<Tailwind/>},
-        { name:"Python",logo:<Python/>},
-        { name:"JavaScript",logo:<Js/>},
-        { name:"APIs",logo:<Api/>},
-        { name:"Data Structures & Algorithms",logo:<Dsa/>},
-        { name:"Git /Github",logo:<Git/>},
-        { name:"Next Js",logo:<Next/>},
-        { name:"React",logo:<React/>}
+        { name:"HTML 5",logo:<Html/>, level:90},
+        { name:"CSS 3",logo:<Css/>,level:80},
+        { name:"Bootstrap",logo:<Bootstrap/>,level:80},
+        { name:"Tailwind CSS",logo:<Tailwind/>,level:80},
+        { name:"Python",logo:<Python/>,level:50},
+        { name:"JavaScript",logo:<Js/>,level:70},
+        { name:"APIs",logo:<Api/>,level:50},
+        { name:"Data Structures & Algorithms",logo:<Dsa/>,level:60},
+        { name:"Git /Github",logo:<Git/>,level:70},
+        { name:"Next Js",logo:<Next/>,level:70},
+        { name:"React Js",logo:<React/>,level:80}
     ]
 
-    return <section class="px-20 h-100 w-100 d-flex align-items-center justify-center">
+    return <section id="skills" class="overflow-y-scroll hidescrollbar px-20 h-100 w-100 d-flex align-items-center justify-center">
         
         <div class="px-20 h-70 w-100 d-flex gap-4 flex-wrap align-items-center justify-center">
             {skills.map((val)=>{
-                return <div class="skillbox hovershadow rounded-xl p-3">
-                {val.logo}
-                <p class="roboto text-sm font-light text-wrap m-0 p-0">{val.name}</p>
-            </div>
+                return <CircularProgress 
+                        percentage={val.level} 
+                        className='h-fit w-fit' 
+                        strokeWidth={6}
+                        color="red"
+                        content={<div class="skillbox rounded-xl p-4">
+                            {val.logo}
+                            <p class="roboto text-sm font-light text-wrap m-0 p-0">{val.name}</p>
+                        </div>}
+                    />
+                
             })}
         </div>
 </section>}

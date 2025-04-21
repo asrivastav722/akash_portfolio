@@ -1,19 +1,28 @@
 .projectcard{
-    height: 200px;
-    width: 280px;
+    height: 230px;
+    width: 290px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top-right-radius: 35px;
-    border: 5px solid rgb(152,5,5);
+    border-radius: 20px;
+    border: 5px solid  rgb(2, 30, 61)  ;
     transition: all 0.5s ease;
-
+    .redirect{
+        display: none;
+        border-radius:15px;
+        background-color:rgba(2, 45, 91, 0.398) ;
+    transition: all 0.5s ease;
+        
+    }
 }
 .hoverbox{
-    border-top-right-radius: 25px;
-    background-color: rgb(152, 5, 5);
+    border-top-left-radius:12px;
+    border-top-right-radius: 12px;
+    background-color:  rgb(2, 30, 61) ;
 }
 .projectcard:hover{
-    height: 210px;
-    width: 295px;
+    transform: translate(0px,-10px);
+    .redirect{
+        display: flex;
+    }
 } 

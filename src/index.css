@@ -6,15 +6,17 @@
 /* Custom Global Classes */
 html {    scroll-behavior: smooth;  }
 
-.darkbg     {   background-color:rgb(0, 0, 0)               !important    }
-.darkfg     {   background-color:rgba(255, 8, 8, 0.738)     !important    }
-.darktext   {   color:rgba(255, 8, 8, 0.738)                !important    }
+.darkbg     {   background-color:rgb(2, 15, 37)               !important    }
+.darkfg     {   background-color:rgba(255, 8, 8, 0.848)     !important    }
+.darktext   {   color:rgba(255, 8, 8, 0.562)                !important    }
 .lightbg    {   background-color:rgb(255, 255, 255)         !important    }
 .lightfg    {   background-color:rgb(243, 237, 237)         !important    }
 .mont       {   font-family: montserrat                       !important    }
 .poppins    {   font-family: poppins                          !important    }
 .textgrey   {   color:#ccd2d9c9                             !important    }
 .roboto     {   font-family: "Roboto Condensed", sans-serif   !important    }
+.blue       {   background-color: rgb(26, 137, 255)        !important}
+.boxshadow  {   box-shadow:0px 0px 5px rgba(8, 164, 255, 0.514)     !important    }
 
 .ant-tooltip-inner{
     font-family: "Roboto Condensed", sans-serif ;
@@ -56,8 +58,25 @@ input:-ms-input-placeholder{
     border:1px solid rgb(255, 8, 8);
 
 }
+.hidescrollbar::-webkit-scrollbar{
+    display: none !important;
+}
 
 
+#dashboard .CircularProgressbar-trail{
+    display: none !important;
+}
+.CircularProgressbar-path{
+    stroke:rgba(255, 8, 8, 0.848)     !important;
+}
+
+
+#skills .CircularProgressbar-trail{
+    stroke: rgba(255, 255, 255, 0.083);
+}
+.CircularProgressbar-path{
+    stroke:rgba(255, 8, 8, 0.848)     !important;
+}
 
 
 

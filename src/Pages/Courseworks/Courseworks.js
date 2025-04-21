@@ -15,7 +15,7 @@ export default function Courseworks(){
         "Object oriented programming"
     ]
     return (
-    <section class="h-100 w-100 d-flex justify-center align-items-center">
+    <section class="h-100 w-100 d-flex justify-center align-items-center overflow-y-scroll hidescrollbar ">
             
         <ul class="d-flex align-items-center justify-center p-20 flex-wrap gap-4">
             

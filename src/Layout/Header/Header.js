@@ -18,13 +18,13 @@ export default function Header({location,setLocation,navData,...props}){
             <div className="d-flex gap-4">
 
               {location!=="/contact" && <Button 
-              className="hovershadow contact roboto" 
+              className=" contact blue  roboto " 
               onClick={()=>{ontoggleMenu("/contact")}} 
            
               >
               Contact Me</Button>}
             
-              <Button  className="getres hovershadow roboto">Get Resume</Button>
+              <a className="text-decoration-none" href="https://drive.google.com/file/d/1Bmx3KHsSjFJfX1pxlHmwTLPloWc6mHCR/view?usp=sharing"><Button className="getres darkfg text-white  roboto">View Resume</Button></a>
             
             </div>
           </header>

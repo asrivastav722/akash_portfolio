@@ -7,6 +7,7 @@ import Simon from "../../assets/images/simon.JPG"
 import ShowStage from "../../assets/images/showstage.png"
 import g4e from "../../assets/images/g4e.png"
 import "./Projects.scss"
+import { Button } from "antd"
 
 export default function Projects(){
 
@@ -21,13 +22,17 @@ export default function Projects(){
         { title:"Simon Game"            ,picture:Simon      ,link:"https://asrivastav722.github.io/Simon-Game/"}
     ]
 
-    return <section class="h-100 p-4 w-100 d-flex gap-4 align-items-center row-gap-0 flex-wrap justify-center">
+    return <section class="overflow-x-scroll hidescrollbar h-100 p-3 w-100 d-flex gap-3 align-items-center row-gap-0 flex-wrap justify-center">
             {projects.map((val,i)=>{
                 return <a href={val.link} 
-                        className="projectcard position-relative" 
+                        className="projectcard box-shadow position-relative" 
                         style={{backgroundImage:`url(${val?.picture})`}}>
                             <div className="roboto text-white hoverbox p-2 w-100 position-absolute">
                                 {val.title}
+                            </div>
+                            <div className="flex-col align-items-center justify-center redirect position-absolute h-100 w-100">
+                                <Button className="roboto bg-slate-400">View Source</Button>
+                                
                             </div>
                         </a>})}
             </section>
