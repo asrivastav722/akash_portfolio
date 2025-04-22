@@ -19,3 +19,25 @@
     cursor: pointer;
     transform: translate(0px,-20px);
 }
+
+// MobileSkills
+.skillprogressmobile{
+    transition: all 0.5s ease;
+.skillboxmobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s ease;
+    svg{
+        height: 30px;
+        width: 30px;
+    }
+}}
+.skillprogressmobile:hover{
+    cursor: pointer;
+    transform: translate(0px,-20px);
+}

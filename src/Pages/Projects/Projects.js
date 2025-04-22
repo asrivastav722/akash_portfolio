@@ -8,8 +8,20 @@ import ShowStage from "../../assets/images/showstage.png"
 import g4e from "../../assets/images/g4e.png"
 import "./Projects.scss"
 import { Button } from "antd"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export default function Projects(){
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+      };
 
     const projects=[
         { title:"Show Stage"            ,picture:ShowStage  ,source:"https://app.showstage.in"},
@@ -22,7 +34,7 @@ export default function Projects(){
         { title:"Simon Game"            ,picture:Simon      ,source:"https://asrivastav722.github.io/Simon-Game/"}
     ]
 
-    return <section class="overflow-x-scroll hidescrollbar h-100 p-3 w-100 d-flex gap-3 align-items-center row-gap-0 flex-wrap justify-center">
+    return <><section class="d-none  overflow-x-scroll hidescrollbar h-100 p-3 w-100 gap-3 align-items-center row-gap-0 flex-wrap justify-center">
             {projects.map((val,i)=>{
                 return <a href={val.source} 
                         className="projectcard box-shadow position-relative" 
@@ -36,4 +48,23 @@ export default function Projects(){
                             </div>
                         </a>})}
             </section>
+    <section class=" h-100 p-3 w-100 ">
+    <Slider {...settings}>
+            {projects.map((val,i)=>{
+                return <a href={val.source} 
+                        className="projectcard box-shadow position-relative" 
+                        style={{backgroundImage:`url(${val.picture})`}}>
+                            <div className="roboto text-white hoverbox p-2 w-100 position-absolute">
+                                {val.title}
+                            </div>
+                            <div className="flex-col align-items-center justify-center redirectmobile position-absolute h-100 w-100">
+                                <Button className="roboto bg-slate-400">
+                                    View Source
+                                </Button>
+                            </div>
+                        </a>})}
+                        </Slider>
+
+            </section>
+            </>
 }

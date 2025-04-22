@@ -80,6 +80,32 @@ input:-ms-input-placeholder{
 }
 
 
+.slick-dots li.slick-active {
+    background-color: rgba(255, 8, 8, 0.848) ;
+    width: 24px !important;
+    height: 5px !important;
+    border-radius: 100px !important;
+    content:" " !important;
+  
+  }
+  .slick-dots li {
+    background-color:rgba(255, 8, 8, 0.848) ;
+    width: 12px !important;
+    height: 5px !important;
+    border-radius: 100px !important;
+    content:" " !important;
+    margin: 4px !important;
+    
+  
+  }
+  .slick-dots li button{
+    display: none !important;
+  }
+  
+  .slick-dots{
+  
+    border: -10px !important ;
+  }
 
 
 

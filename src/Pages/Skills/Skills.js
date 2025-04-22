@@ -29,9 +29,9 @@ export default function Skills(){
         { name:"React Js",logo:<React/>,level:80}
     ]
 
-    return <section id="skills" class="overflow-y-scroll hidescrollbar px-20 h-100 w-100 d-flex align-items-center justify-center">
+    return <> <section id="skills" class="d-none d-lg-flex overflow-y-scroll hidescrollbar px-20 h-100 w-100  align-items-center justify-center">
         
-        <div class="px-20 h-70 w-100 d-flex gap-4 flex-wrap align-items-center justify-center">
+        <div class=" px-20 h-70 w-100 d-flex gap-4 flex-wrap align-items-center justify-center">
             {skills.map((val)=>{
                 return <CircularProgress 
                         percentage={val.level} 
@@ -46,4 +46,23 @@ export default function Skills(){
                 
             })}
         </div>
-</section>}
+        </section>
+        <section id="skills" class=" d-lg-none overflow-y-scroll hidescrollbar p-4 h-100 w-100 d-flex align-items-center justify-center">
+        <div class=" h-100 w-100 d-flex gap-4 flex-wrap align-items-center justify-center">
+            {skills.map((val)=>{
+                return <CircularProgress 
+                        percentage={val.level} 
+                        className='h-fit w-fit skillprogressmobile' 
+                        strokeWidth={6}
+                        color="red"
+                        content={<div class="skillboxmobile gap-2 rounded-xl p-3">
+                            {val.logo}
+                            <p class="roboto text-xs font-light text-wrap m-0 p-0">{val.name}</p>
+                        </div>}
+                    />
+                
+            })}
+        </div>
+</section>
+</>
+}

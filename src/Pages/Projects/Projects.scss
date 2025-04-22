@@ -26,3 +26,32 @@
         display: flex;
     }
 } 
+// Mobile Projects
+.projectcardmobile{
+    height: 300px;
+    width: 280px;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    border-radius: 20px;
+    border: 5px solid  rgb(2, 30, 61)  ;
+    transition: all 0.5s ease;
+    .redirectmobile{
+        display: none;
+        border-radius:15px;
+        background-color:rgba(2, 45, 91, 0.398) ;
+    transition: all 0.5s ease;
+        
+    }
+}
+.hoverboxmobile{
+    border-top-left-radius:12px;
+    border-top-right-radius: 12px;
+    background-color:  rgb(2, 30, 61) ;
+}
+.projectcardmobile:hover{
+    transform: translate(0px,-10px);
+    .redirectmobile{
+        display: flex;
+    }
+} 

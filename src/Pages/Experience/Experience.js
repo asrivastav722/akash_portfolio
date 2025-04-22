@@ -38,7 +38,7 @@ export default function Experience(){
 
             ]},
     ]
-    return <section class="overflow-x-scroll hidescrollbar roboto h-100 w-100 d-flex align-items-center justify-center">
+    return <><section class="d-none d-lg-flex overflow-x-scroll hidescrollbar roboto h-100 w-100 align-items-center justify-center">
         {experience.map((val,i)=>{
             return <div className="d-flex align-items-center">
                 <div className="h-fit rounded-3xl d-flex flex-col hovershadow align-items-center justify-start excard p-4 gap-4">
@@ -58,4 +58,25 @@ export default function Experience(){
         })}
     
 </section>
+<section class="d-lg-none overflow-x-scroll hidescrollbar roboto h-100 w-100 flex-col d-flex align-items-center p-4  justify-center">
+        {experience.map((val,i)=>{
+            return <div className="d-flex flex-col align-items-center">
+                <div className="h-fit rounded-3xl d-flex flex-col hovershadow align-items-center justify-start excardmobile p-4 gap-4">
+                        <span className="text-xl font-light">{val.designation}</span>
+                        <span className="text-lg font-light">[ {val.organization} ]</span>
+                    
+                    <div className="d-flex w-100 justify-between">
+                        <span className="text-md font-light">{val.location}</span>
+                        <span className="text-md font-light">{val.startdate} -{val.enddate}</span>
+                    </div>
+            <ul className="text-sm font-light list-disc tracking-wide leading-5">
+            {val.desc}
+            </ul>
+        </div>
+        {experience.length!==i+1 && <div className="continutymobile"></div>}
+        </div>
+        })}
+    
+</section>
+</>
 }
