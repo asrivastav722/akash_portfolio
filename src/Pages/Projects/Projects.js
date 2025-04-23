@@ -34,7 +34,7 @@ export default function Projects(){
         { title:"Simon Game"            ,picture:Simon      ,source:"https://asrivastav722.github.io/Simon-Game/"}
     ]
 
-    return <><section class="d-none  overflow-x-scroll hidescrollbar h-100 p-3 w-100 gap-3 align-items-center row-gap-0 flex-wrap justify-center">
+    return <><section class="d-none d-lg-flex  overflow-x-scroll hidescrollbar h-100 p-3 w-100 gap-3 align-items-center row-gap-0 flex-wrap justify-center">
             {projects.map((val,i)=>{
                 return <a href={val.source} 
                         className="projectcard box-shadow position-relative" 
@@ -48,7 +48,7 @@ export default function Projects(){
                             </div>
                         </a>})}
             </section>
-    <section class=" h-100 p-3 w-100 ">
+    <section class="d-flex d-lg-flex h-100 p-3 w-100 ">
     <Slider {...settings}>
             {projects.map((val,i)=>{
                 return <a href={val.source} 
